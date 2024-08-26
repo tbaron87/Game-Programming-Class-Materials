@@ -1,11 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Unity.Netcode;
-using UnityEngine.Networking;
+//using Unity.Netcode;
+//using UnityEngine.Networking;
 
-public class PlayerScript : NetworkBehaviour
+/**
+ * Unfortunately, UnityEngine.Networking has been depricatred and removed
+ * since this was made for the class. Instead, you are now supposed to use
+ * Netcode for GameObjects to do multiplayer. This is left for record
+ * keeping, but will not work if commented back in.
+ */
+public class PlayerScript : MonoBehaviour // NetworkBehaviour
 {
+    /*
     // Demonstrates use of NetworkVariable for type INT
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1,NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
 
@@ -74,5 +79,5 @@ public class PlayerScript : NetworkBehaviour
     {
         Debug.Log("Checking sample ClientRpc");
     }
-
+    */
 }

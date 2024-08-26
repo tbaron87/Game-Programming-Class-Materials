@@ -1,9 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Unity.Netcode;
+//using Unity.Netcode;
 
+/**
+ * This class has the same issue as the PlayerScript script
+ * in this Multiplayer module. See that for details.
+ */
 public class NetworkManagerUI : MonoBehaviour
 {
    
@@ -16,15 +18,15 @@ public class NetworkManagerUI : MonoBehaviour
     {
         serverButton.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.StartServer();
+            //NetworkManager.Singleton.StartServer();
         });
         hostButton.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.StartHost();
+            //NetworkManager.Singleton.StartHost();
         });
         clientButton.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.StartClient();
+            //NetworkManager.Singleton.StartClient();
         });
 
     }
